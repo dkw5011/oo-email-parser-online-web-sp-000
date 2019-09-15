@@ -10,7 +10,7 @@ class EmailAddressParser
   end
   
   def parse
-    self.email.split(/\s,/)
+    new_array = self.email.split(',') || self.email.split(' ')
 end
 
 end
